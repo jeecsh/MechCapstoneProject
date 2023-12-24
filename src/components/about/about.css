@@ -1,0 +1,98 @@
+/* about.css */
+
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: white;
+}
+
+.section-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  right:  150px;
+  margin-bottom: 30px;
+ 
+ 
+  margin-left:200px; /* Adjust the margin as needed */
+}
+.section-content >h2{
+  color: #5c116b;
+  margin-bottom: 50px;
+  font-size: 60px;
+  opacity: 0; /* Start with 0 opacity */
+  animation: fadeIn 1s ease forwards; 
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.section-content>p{
+  animation: slowMotion 2s ease forwards;
+  font-size: 30px;
+  color: rgb(160, 160, 160);
+}
+@keyframes slowMotion {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }}
+
+.roll {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  margin-left: -300px; 
+  animation: rotate 5s linear infinite;
+
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cont {
+    display: flex;
+    flex-direction: column; /* Set the flex direction to column on smaller screens */
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  
+  }
+
+  .section-content>p{
+  margin-left: 10px;
+  font-size: 20px;
+  position: relative;
+  bottom: 200px;
+  left: 50px;
+width: 300px;
+  }
+  
+  .section-content >h2{
+  
+  font-size: 40px;
+  position: relative;
+  bottom:200px;
+  left: 50px;
+  font-weight: bolder;
+  font-size: 60px;
+  white-space: nowrap;
+  }
+ 
+  
+}

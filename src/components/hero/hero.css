@@ -1,0 +1,68 @@
+video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+   
+
+}
+.herocont{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0,0, 0.2);
+    object-fit: contain;
+    height: 1000px;
+}
+.herocont > h1{
+    color: white;
+    font-size: 100px;
+    margin-top: 150px;
+    align-items: center;
+    font-family: 'Archivo', sans-serif;
+  
+}
+.herocont >p{
+  display: flex;
+    margin-top: 100px;
+    color: white;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.btnn{
+    margin-top: 50px;   
+    font-size: 30px;
+    background-color: transparent;
+border-radius: 20px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+padding: 10px;
+ font-weight:bold;
+ color: #5c116b;
+cursor: pointer;
+border: none;
+z-index: 100;
+transition: background-color 0.5s ease, color 0.5s ease;
+}
+.btnn:hover{
+    animation: glow 1s ease-in-out infinite;
+background-color: rgba(0, 0, 0, 0.993);
+
+}
+@keyframes glow {
+    0% {
+      box-shadow: 0 0 20px #553a77;
+    }
+    50% {
+      box-shadow: 0 0 20px  #553a77;
+    }
+    100% {
+      box-shadow: 0 0 20px  #553a77;
+    }
+  }
