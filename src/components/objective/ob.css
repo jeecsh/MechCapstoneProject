@@ -3,7 +3,7 @@
     text-align: center;
     overflow: hidden;
     background-color: #2a2a2b;
-    height: 600px;
+    /* height: 600px; */
     display: flex;
     align-items: center;
   }
@@ -16,9 +16,20 @@
   }
   
   .card {
+    display: flex;
+    width: 400px;
+      height: 200px;
+      border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  background-color:#2a2a2b;
  
+    margin: 10px;
+    color: black;
     transition: background-color 0.3s ease;
     margin-bottom: 30px;
+    animation: gloww 2s ease-in-out infinite;
    
     &.expanded {
       background-color: #000000;
@@ -33,23 +44,44 @@
       position: absolute;
       top: 0;
       left: 0;
+  
 
       width: 100%;
       height: 100%;
     
       border-radius: 8px;
       opacity: 0;
-      animation: gloww 2s ease-in-out infinite;
+      animation: gloww s ease-in-out infinite;
       z-index: -1;
     }
+    
   
     h3 {
       margin: 0;
     }
   
-   
-  
-    
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 20px #553a77;
+      }
+      50% {
+        box-shadow: 0 0 20px  #553a77;
+      }
+      100% {
+        box-shadow: 0 0 20px  #553a77;
+      }
+    }
+    @keyframes grow {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
   }
   p{
     color:  #5c116b;
@@ -84,7 +116,7 @@
   .card:hover{
     
         background-color: black;
-    
+        animation: glow 1s ease-in-out infinite, grow 1s ease-in-out;
         .gloww {
           opacity: 1;
         }

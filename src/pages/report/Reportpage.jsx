@@ -6,10 +6,10 @@ import Dawn from '../../components/dawnloadb/Dawn';
 
 const Reportpage = () => {
   return (
-    <div>
+    <div className='fot'>
    <div><Navbar/></div>
    <div><Dawn/></div>
-  <div><Footer/></div>
+  <div ><Footer/></div>
     </div>
   )
 }

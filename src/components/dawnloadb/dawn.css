@@ -52,6 +52,15 @@ h2{
     h2{
         font-size: 18px;
         font-weight: bolder;
+       
     }
+.raso{
+    height: 650px;
+}
+}
 
+@media screen and (max-width: 600px){
+    .bdb{
+        background-color: black;
+    }
 }

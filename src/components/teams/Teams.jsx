@@ -11,7 +11,7 @@ const Teams = () => {
         
         <h1 className='hh'>Meet our team</h1>
    <div className="cards">
-    <div className="card">
+    <div className="car">
         <div className="face">   </div>
         <p className='nme'>mohamed osman</p>
         <div className='twr'>
@@ -23,7 +23,7 @@ const Teams = () => {
       </a>
       </div>
     </div>
-    <div className="card">
+    <div className="car">
         <div className="face">  <img src="/pic/fawaz.jpg" alt="Objective" className='pp'/></div>
         <p className='nme'>fawaz osman abdelrahman</p>
         <div className='twr'>
@@ -35,7 +35,7 @@ const Teams = () => {
       </a>
       </div>
     </div>
-    <div className="card">
+    <div className="car">
         <div className="face"></div>
         <p className='nme'>khaled Abd Alslam</p>
         <div>
@@ -47,7 +47,7 @@ const Teams = () => {
       </a>
       </div>
     </div>
-    <div className="card">
+    <div className="car">
         <div className="face"><img src="/pic/ehab.jpg" alt="Objective" className='pp'/></div>
         <p className='nme'>Ehab Nasser</p>
         <div className='twr'>
@@ -59,7 +59,7 @@ const Teams = () => {
       </a>
       </div>
     </div>
-    <div className="card">
+    <div className="car">
         <div className="face"></div>
         <p className='nme'>mohamed amin</p>
         <div className='twr'>

@@ -14,3 +14,10 @@ justify-content: center;
 margin-top: 170px;
 font-size: 10px;
 }
+@media screen and (max-width: 600px){
+.contain{height: 300px;
+}
+.rights{
+    margin-top: 250px;
+}
+}
