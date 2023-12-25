@@ -2,7 +2,7 @@
 .objective-section {
     text-align: center;
     overflow: hidden;
-    background-color: #2a2a2b;
+    background-color: #556B2f;
     /* height: 600px; */
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  background-color:#2a2a2b;
+  background-color:#556B2f;
  
     margin: 10px;
     color: black;
@@ -59,18 +59,16 @@
     h3 {
       margin: 0;
     }
-  
-    @keyframes glow {
+    @keyframes gloww {
       0% {
-        box-shadow: 0 0 20px #553a77;
+        box-shadow: 0 0 20px white;
       }
       50% {
-        box-shadow: 0 0 20px  #553a77;
+        box-shadow: 0 0 20px  white;
       }
       100% {
-        box-shadow: 0 0 20px  #553a77;
-      }
-    }
+        box-shadow: 0 0 20px  white;
+      }}
     @keyframes grow {
       0% {
         transform: scale(1);
@@ -84,7 +82,7 @@
     }
   }
   p{
-    color:  #5c116b;
+    color:  #556B2f;
     font-size: 20px;
     font-weight: bold;
     
@@ -116,7 +114,7 @@
   .card:hover{
     
         background-color: black;
-        animation: glow 1s ease-in-out infinite, grow 1s ease-in-out;
+        animation: gloww 1s ease-in-out infinite, grow 1s ease-in-out;
         .gloww {
           opacity: 1;
         }

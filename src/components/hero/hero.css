@@ -17,8 +17,15 @@ video{
     object-fit: contain;
     height: 1000px;
 }
+.herocont > h2{
+  position: absolute;
+  color: white;
+  top: 25%;
+  text-shadow: none;
+}
 .herocont > h1{
-    color: white;
+    color: #99c252;
+    text-shadow:0 0 20px #ffffffb2;
     font-size: 100px;
     margin-top: 150px;
     align-items: center;
@@ -46,26 +53,29 @@ video{
 }
 .herocont >p{
   display: flex;
+  position: relative;
+  top: 20px;
     margin-top: 100px;
-    color: white;
-    font-size: 32px;
+    color:#ffffff;
+    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: monospace;
     animation: fadeIn 1s ease forwards; 
     animation: slowMotion 2s ease forwards;
+    font-weight: 200px;
 
 }
 .btnn{
     margin-top: 50px;   
     font-size: 30px;
-    background-color: transparent;
+    background-color: black;
 border-radius: 20px;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 padding: 10px;
  font-weight:bold;
- color: #5c116b;
+ color: #556B2f;
 cursor: pointer;
 border: none;
 z-index: 100;
@@ -79,28 +89,37 @@ background-color: rgba(0, 0, 0, 0.993);
 }
 @keyframes glow {
     0% {
-      box-shadow: 0 0 20px #553a77;
+      box-shadow: 0 0 20px #556B2f;
     }
     50% {
-      box-shadow: 0 0 20px  #553a77;
+      box-shadow: 0 0 20px  #556B2f;
     }
     100% {
-      box-shadow: 0 0 20px  #553a77;
+      box-shadow: 0 0 20px  #556B2f;
     }
   }
   @media screen and (max-width: 600px){
+   
     .herocont > h1{
       font-size: 80px;
       margin-top: 200px;
-      
+      /* position: relative
+      ;
+      right:  20px; */
     }
     .herocont >p{
       font-size: 20px;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family:monospace;
 margin-top: 100px;
-font-weight: 600;
+font-weight: 200;
 
 
+    }
+    .herocont > h2{
+      position: absolute;
+      top: 24%;
+    
+      
     }
    
     .btnn{
