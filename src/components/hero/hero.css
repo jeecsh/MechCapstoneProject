@@ -4,6 +4,8 @@ video{
     height: 100%;
     position: fixed;
     z-index: -1;
+    overflow: hidden;
+    
 
 
 }
@@ -13,7 +15,7 @@ video{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0,0, 0.2);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.068);
     object-fit: contain;
     height: 1000px;
     margin-top: 20px;
@@ -121,7 +123,7 @@ top: 250px;
     }
     .herocont > h2{
       position: absolute;
-      top: 20%;
+      top: 30%;
     
       
     }
@@ -129,6 +131,8 @@ top: 250px;
     .btnn{
 font-size: 20px;
 background-color: black;
+position: relative;
+bottom: 20px;
     }
     video{
       width: 50%;

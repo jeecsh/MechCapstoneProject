@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
 
+  overflow: hidden;
 
 }
 video{
@@ -129,8 +130,11 @@ video{
   align-items: center;
   position: absolute;
   top :50%;
-}
 
+}
+.card-content > p{
+  font-size: 10px;
+}
 
 
   .objectives-title{
