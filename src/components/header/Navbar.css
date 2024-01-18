@@ -15,7 +15,7 @@
     margin-left: 2rem;
     font-size: 2rem;
     background: none;
-    color: #556B2f;
+    color:  #1860dd;
   }
   
   .nav-menu {
@@ -58,7 +58,7 @@
   }
   
   .nav-text a:hover {
-    background-color: #556B2f;
+    background-color:  #1860dd;
   }
   
   .nav-menu-items {

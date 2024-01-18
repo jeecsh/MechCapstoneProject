@@ -4,7 +4,7 @@ video{
     height: 100%;
     position: fixed;
     z-index: -1;
-   
+
 
 }
 .herocont{
@@ -16,17 +16,18 @@ video{
     box-shadow: inset 0 0 0 1000px rgba(0, 0,0, 0.2);
     object-fit: contain;
     height: 1000px;
+    margin-top: 20px;
 }
 .herocont > h2{
   position: absolute;
-  color: white;
-  top: 25%;
+  color: #1860dd;
+  top: 15%;
   text-shadow: none;
 }
 .herocont > h1{
-    color: #99c252;
-    text-shadow:0 0 20px #ffffffb2;
-    font-size: 100px;
+    color: rgb(190, 190, 190);
+    text-shadow:0 0 20px #000000e8;
+    font-size: 80px;
     margin-top: 150px;
     align-items: center;
     font-family: 'Archivo', sans-serif;
@@ -54,11 +55,11 @@ video{
 .herocont >p{
   display: flex;
   position: relative;
-  top: 20px;
+ top: 25%;
     margin-top: 100px;
     color:#ffffff;
-    font-size: 25px;
-    display: flex;
+    font-size: 30px;
+ 
     justify-content: center;
     align-items: center;
     font-family: monospace;
@@ -68,14 +69,14 @@ video{
 
 }
 .btnn{
-    margin-top: 50px;   
+    margin-top: 300px;   
     font-size: 30px;
     background-color: black;
 border-radius: 20px;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 padding: 10px;
  font-weight:bold;
- color: #556B2f;
+ color: #1860dd;
 cursor: pointer;
 border: none;
 z-index: 100;
@@ -89,19 +90,19 @@ background-color: rgba(0, 0, 0, 0.993);
 }
 @keyframes glow {
     0% {
-      box-shadow: 0 0 20px #556B2f;
+      box-shadow: 0 0 20px  #1860dd;
     }
     50% {
-      box-shadow: 0 0 20px  #556B2f;
+      box-shadow: 0 0 20px   #1860dd;
     }
     100% {
-      box-shadow: 0 0 20px  #556B2f;
+      box-shadow: 0 0 20px   #1860dd;
     }
   }
   @media screen and (max-width: 600px){
    
     .herocont > h1{
-      font-size: 80px;
+      font-size: 40px;
       margin-top: 200px;
       /* position: relative
       ;
@@ -110,14 +111,17 @@ background-color: rgba(0, 0, 0, 0.993);
     .herocont >p{
       font-size: 20px;
       font-family:monospace;
-margin-top: 100px;
+margin-top: 200px;
 font-weight: 200;
+position: relative
+;
+top: 250px;
 
 
     }
     .herocont > h2{
       position: absolute;
-      top: 24%;
+      top: 20%;
     
       
     }
@@ -125,5 +129,11 @@ font-weight: 200;
     .btnn{
 font-size: 20px;
 background-color: black;
+    }
+    video{
+      width: 50%;
+      height: 50%;
+      object-fit: cover;
+
     }
   }

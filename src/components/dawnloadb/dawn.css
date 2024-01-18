@@ -7,12 +7,13 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 10px;
      font-weight:bold;
-     color:#556B2f;
+     color:#1860dd;
     cursor: pointer;
     border: none;
     z-index: 100;
     transition: background-color 0.5s ease, color 0.5s ease;
     margin-top: 80px;
+    
     }
    
     .bdb:hover{
@@ -22,13 +23,13 @@
     }
     @keyframes glow {
         0% {
-          box-shadow: 0 0 20px #556B2f;
+          box-shadow: 0 0 20px #1860dd;
         }
         50% {
-          box-shadow: 0 0 20px  #556B2f;
+          box-shadow: 0 0 20px  #1860dd;
         }
         100% {
-          box-shadow: 0 0 20px  #556B2f;
+          box-shadow: 0 0 20px  #1860dd;
         }
       }
    
@@ -44,9 +45,10 @@ justify-content: center;
 flex-direction: column;
 }
 h2{
-    color: #556B2f;
+    color: #1860dd;
     margin-bottom: 20px;
     margin-top: 100px;
+    font-size: 70px;
 }
 @media screen and (max-width: 600px) {
     h2{
@@ -55,7 +57,7 @@ h2{
        
     }
 .raso{
-    height: 650px;
+    height: 950px;
 }
 }
 
@@ -63,4 +65,7 @@ h2{
     .bdb{
         background-color: black;
     }
+}
+.raso{
+    height: 620px;
 }

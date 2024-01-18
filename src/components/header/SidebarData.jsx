@@ -26,12 +26,7 @@ export const SidebarData = [
     icon: <GroupsIcon />,
     cName: 'nav-text'
   },
-  {
-    title: 'Poster',
-    path: '/Poster',
-    icon: <PanoramaIcon />,
-    cName: 'nav-text'
-  },
+ 
   // {
   //   title: 'contact',
   //   path: '/contact',

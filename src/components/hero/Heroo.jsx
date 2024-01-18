@@ -4,10 +4,10 @@ import './hero.css'
 const Heroo = () => {
   return (
     <div className="herocont">
-        <video src="/video/v1.mp4" autoPlay loop muted />
-        <h1>OLIVE</h1>
-        <h2>CRUSHING MACHINE</h2>
-        <p>what are you waiting for</p>
+        <video src="/video/v2.mp4" autoPlay loop muted />
+        <h1>BiPowerTracker</h1>
+        <h2>Graduation design project</h2>
+        <p>SO WHAT ARE YOU WAITING FOR !</p>
     <ScrollLink to="gg" smooth={true} duration={500}>
     <button className="btnn" >TAKE A LOOK</button>
     </ScrollLink>

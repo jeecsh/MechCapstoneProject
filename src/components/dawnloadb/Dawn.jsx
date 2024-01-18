@@ -3,18 +3,18 @@ import './dawn.css';
 
 const Dawn = () => {
   const handleDownload = () => {
-    const pdfUrl = '/pdf/ppp.pdf'; 
+    const pdfUrl = '/pdf/oooo.pptx'; 
     const link = document.createElement('a');
     link.href = pdfUrl;
-    link.download = 'ppp.pdf';
+    link.download = 'bipowertracker2.pptx';
     link.click();
   };
 
   return (
     <div className='raso'>
-      <h2>click here to dawnload the report pdf</h2>
+      <h2>click here to download </h2>
       <button className="bdb" onClick={handleDownload}>
-        Download PDF
+        Download 
       </button>
     </div>
   );

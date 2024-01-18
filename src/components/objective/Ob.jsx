@@ -1,44 +1,40 @@
-import React, { useState } from 'react';
+
 import './ob.css';
 
 const Ob = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [expandedIndex, setExpandedIndex] = useState(null);
-
-  const objectives = [
-    { title: 'Objective 1', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-    { title: 'Objective 2', content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.' },
-    { title: 'Objective 3', content: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-    { title: 'Objective 4', content: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-  ];
-
-  const handleCardHover = (index) => {
-    setHoveredIndex(index);
-  };
-
-  const handleCardClick = (index) => {
-    setHoveredIndex(null); // Reset hoveredIndex
-    setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
-  };
-
   return (
-    <div className="objective-section">
-      <h1>Our Objectives</h1>
-      <div className="cards">
-        {objectives.map((objective, index) => (
-          <div
-            key={index}
-            className={`card ${expandedIndex === index ? 'expanded' : ''}`}
-            onClick={() => handleCardClick(index)}
-            onMouseEnter={() => handleCardHover(index)}
-            onMouseLeave={() => handleCardHover(null)}
-          >
-            <div className="glow" />
-            <h3>{objective.title}</h3>
-            {hoveredIndex === index && <p>Click Here</p>}
-            {expandedIndex === index && <p>{objective.content}</p>}
+    <div className="objectives-container">
+              <video src="/video/v2.mp4" autoPlay loop muted />
+      <h1 className="objectives-title">Objectives</h1>
+      <div className="card-container">
+        <div className="card">
+          <div className="card-content">
+            <h2>Flexible Solution for Solar PV</h2>
+            <p>This energy tracker  is designed to be a comprehensive solution for measuring Solar PV Applications, providing flexibility for both DC and AC power flow.
+</p>
           </div>
-        ))}
+        </div>
+        <div className="card">
+          <div className="card-content">
+            <h2>Online Remote Monitoring</h2>
+            <p>Through the Blynk app, we can monitor these parameters in real-time from anywhere, making it convenient for online remote monitoring.
+</p>
+          </div>
+        </div>
+        <div className="card">
+          <div className="card-content">
+            <h2>Test System Performance</h2>
+            <p>Conduct comprehensive testing and validation of the Two-Way Meter system and the mobile app to ensure accuracy, reliability, and seamless functionality under various operational scenarios.
+</p>
+          </div>
+        </div>
+        <div className="card">
+          <div className="card-content">
+            <h2>Seek User Feedback</h2>
+            <p>Encourage user feedback through pilot implementations, and utilize this feedback to make continuous improvements to both the hardware and software components, enhancing the overall user experience and system performance.
+</p>
+          </div>
+        </div>
       </div>
     </div>
   );
