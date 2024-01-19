@@ -4,7 +4,7 @@ import './hero.css'
 const Heroo = () => {
   return (
     <div className="herocont">
-        <video src="/video/v2.mp4" autoPlay loop muted />
+        <video src="/video/vb.mp4" autoPlay loop muted />
         <h1>BiPowerTracker</h1>
         <h2>Graduation design project</h2>
         <p>SO WHAT ARE YOU WAITING FOR !</p>

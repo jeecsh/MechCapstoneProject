@@ -2,7 +2,7 @@
 .objectives-container {
   text-align: center;
   margin-top: 50px;
-  height: 900px;
+  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -93,8 +93,9 @@ margin-right: 10px;
     display: flex;
     flex-direction: column;
 overflow: hidden;
-    height: 1700px;
+    height: auto;
   object-fit: cover;
+  margin-bottom: 30px;
 
   }
 .card-container{
@@ -130,6 +131,7 @@ video{
   align-items: center;
   position: absolute;
   top :50%;
+  
 
 }
 .card-content > p{
