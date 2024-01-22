@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import './hero.css';
-import videoBackground from "/Users/jecsh/capston mech/react/public/video/vb.mp4";
+import videoBackground from "../../../public/video/vb.mp4";
+
 
 const Heroo = () => {
   return (
