@@ -149,3 +149,11 @@ align-items: center;
   }
  
 }
+@media (prefers-color-scheme: dark) {
+  /* Dark mode styles here */
+  .cont {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+}
