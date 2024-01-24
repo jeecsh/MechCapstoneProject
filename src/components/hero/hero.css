@@ -107,10 +107,11 @@ background-color: rgba(0, 0, 0, 0.993);
     }
   }
   @media screen and (max-width: 600px){
+    
     .herocont{
       display: flex;
       align-items: center;
-    
+ 
       overflow:hidden;}
    
     .herocont > h1{

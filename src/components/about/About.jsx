@@ -2,6 +2,13 @@ import React from 'react'
 import './about.css'
 import { Element } from 'react-scroll';
 const About = () => {
+  const scrollToNextSection = () => {
+    const nextSection = document.getElementById('next');
+
+    nextSection.scrollIntoView({
+      behavior: 'smooth',
+    });
+  };
   return (
     <Element className="gg">
     <div className='cont' id='gg'>

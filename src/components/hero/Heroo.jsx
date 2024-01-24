@@ -1,10 +1,17 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import './hero.css';
-import videoBackground from "../../../public/video/v2.mp4";
+import videoBackground from "../../../public/video/vb.mp4";
 
 
 const Heroo = () => {
+  const scrollToNextSection = () => {
+    const nextSection = document.getElementById('gg');
+    console.log(gg);
+    nextSection.scrollIntoView({
+      behavior: 'smooth',
+    });
+  };
   return (
     <div className="herocont">
       <video autoPlay loop muted playsInline>

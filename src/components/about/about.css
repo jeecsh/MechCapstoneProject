@@ -9,6 +9,8 @@
   height: 1300px;
   flex-direction: row;
   margin-top: 600PX;
+  scroll-snap-align: start;
+  min-height: 100vh; 
 
 }
 

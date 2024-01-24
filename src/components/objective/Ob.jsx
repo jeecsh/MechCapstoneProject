@@ -3,7 +3,7 @@ import './ob.css';
 
 const Ob = () => {
   return (
-    <div className="objectives-container">
+    <div className="objectives-container" id='next'>
               <video src="/video/v2.mp4" autoPlay loop muted />
       <h1 className="objectives-title">Objectives</h1>
       <div className="card-container">

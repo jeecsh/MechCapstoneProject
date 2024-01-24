@@ -8,7 +8,8 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-
+  scroll-snap-align: start;
+  min-height: 100vh; 
   overflow: hidden;
 
 }
@@ -66,7 +67,8 @@ background-color: rgba(87, 90, 243, 0.459);
   font-size: 24px; /* Adjust the font size accordingly */
   text-align: center;
 position: absolute;
-top: -25%
+top: -25%;
+opacity: 1;
 }
 
 .card:hover p {
@@ -89,14 +91,14 @@ margin-right: 10px;
 
   font-weight: bolder;
   color: rgb(118, 118, 240);
-  
+  opacity: 0;
 
 }
 
 .card-contenttt > p {
   font-size: 20px;
   color: aliceblue;
-  font-weight: bolder;
+
 }
 
 @media screen and (max-width: 600px){
@@ -125,10 +127,11 @@ overflow: hidden;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+width: 370px;
 }
 .card-contenttt{
 
-width: 50%;  
+ 
 align-items: center;
 justify-content: center;
 }
@@ -145,6 +148,8 @@ justify-content: center;
 }
 .card-contenttt > p{
   font-size: 10px;
+width: 100%;
+align-items: center;
 }
 
 
